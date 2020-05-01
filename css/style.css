@@ -1,0 +1,57 @@
+/*MAIN START*/
+body{
+    background-color: #eaeaea;
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+    padding: 0 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/*MAIN END*/
+
+/*Для того чтобы элементы выстраились в 1 строку, нужно родительский блок сделать flex,
+ space-between при этом расположит их по углам*/
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*nav start*/
+.nav{
+    display: flex;
+    font-weight: 700;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+.nav>li{
+    padding-left: 22px;
+    margin-left: 22px;
+    position: relative;
+}
+
+.nav>li>a{
+    color:#494949;
+    text-decoration: none;
+}
+.nav>li::before{
+    content: '';
+    background-color: #494949;
+    width: 2px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+}
+.nav>li:first-child::before{
+    display: none;
+}
+.nav>li:first-child{
+    padding-left: 0;
+    margin-left: 0;
+}
+/*nav - end */
+

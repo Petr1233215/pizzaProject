@@ -16,6 +16,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 40px;
 }
 
 
@@ -26,6 +28,7 @@ body{
     list-style-type: none;
     text-transform: uppercase;
     padding-left: 0;
+    margin-bottom: 0;
 }
 .nav>li{
     padding-left: 22px;

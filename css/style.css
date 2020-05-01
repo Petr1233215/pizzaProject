@@ -7,9 +7,12 @@ body{
     padding: 0 15px;
     max-width: 1170px;
     margin: 0 auto;
+    position: relative;
 }
 /*MAIN END*/
 
+
+/*HEADER - start*/
 /*Для того чтобы элементы выстраились в 1 строку, нужно родительский блок сделать flex,
  space-between при этом расположит их по углам*/
 .navigation{
@@ -57,4 +60,47 @@ body{
     margin-left: 0;
 }
 /*nav - end */
+/*HEADER - end*/
 
+
+/*Banner-Start*/
+.banner{
+    background-image: url("../img/RectangleMainLayer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*сужение изображения от центра*/
+    background-position: center center;
+    padding-bottom: 285px;
+    padding-top: 260px;
+    color:white;
+}
+.banner .title{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+.banner .description{
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    max-width: 570px;
+    margin-bottom: 30px;
+}
+.banner .pizza{
+    position: absolute;
+    /*окажется справаы*/
+    right: 0;
+    top: -260px;
+    /*bottom: 0px;*/
+}
+.banner .btn{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 2px white;
+    color: white;
+    padding: 16px 31px;
+    font-weight: 700;
+}
+/*Banner End*/
